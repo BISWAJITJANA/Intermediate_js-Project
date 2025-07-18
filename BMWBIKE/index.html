@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW website landing page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="logo.png" class="logo">
+           <div class="search-container">
+            <input type="text" id="search" class="search-input" placeholder="Search....">
+            <button class="search-btn" onclick="search()">Search</button>
+           </div>
+        
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <!-- <nav class="nab-contaner">
+            <a href="" class="nb1"></a>
+        </nav> -->
+        <!-----------------------Second Navbar--------------------->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Bikes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">New Bikes</a></li>
+                        <li><a href="#">Best Bike in India</a></li>
+                        <li><a href="#">Popular Brands</a></li>
+                        <li><a href="#">Compare Bike</a></li> 
+                        <li><a href="#">Latest Bike</a></li>
+                        <li><a href="#">Bike by Budget</a></li>
+                        <li><a href="#">Popular bike series</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Scooters</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">New Scooter</a></li>
+                        <li><a href="#">Best scooters</a></li>
+                        <li><a href="#">Popular scooter Brands</a></li>
+                        <li><a href="#">Latest Scooters</a></li>
+                        <li><a href="#">Upcoming Scooters</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Electric Zone</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Electric Bike</a></li>
+                        <li><a href="#">Electric Scooters</a></li>
+                        <li><a href="#">Electric Cycles</a></li>
+                        <li><a href="#">Electric Two Wheeler Brand</a></li>
+                        <li><a href="#">Electric Bike Charging Stations</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">News and Videos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bike News</a></li>
+                        <li><a href="#">Web Stories</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Feature Stories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2>THE BMW</h2>
+            <h1>G 310 R</h1>
+            <p>The strength of te G 310 R is in its lightness and agility. The Bike not only delivers
+             fun in the big-city tumult, but also when you are redefining the city limits when changing 
+             corners Quickly</p>
+             <h3> Choose Your Colour</h3>
+             <div class="color-select">
+               <div id="red"></div>
+               <div id="blue"></div>
+               <div id="black"></div>
+
+             </div>
+
+            
+        </div>
+        .
+    </div>
+    <div class="section-bike">
+        <div class="bike">
+            <h2>Bikes in Spotlight</h2>
+
+        </div>
+        <div class="nav-two">
+            <a href="#">Most popular</a>
+            <a href="#">Sports Bike</a>
+            <a href="#">Best Malige Bike</a>
+            <a href="#">Crulser Bike</a>
+            <a href="#">Commuter Bike</a>
+            <a href="#">Off Road Bike</a>
+        </div>
+    </div>
+    <script>
+        let redBtn = document.getElementById('red');
+        let blueBtn = document.getElementById('blue');
+        let blackBtn = document.getElementById('black');
+        let bike = document.getElementById('bike');
+        redBtn.onclick=function(){
+            bike.style.backgroundImage="url(BMW1.png)";
+        }
+        blueBtn.onclick=function(){
+            bike.style.backgroundImage="url(BMW2.png)";
+        }
+        blackBtn.onclick=function(){
+            bike.style.backgroundImage="url(BMW3.png)";
+        }
+    </script>
+</body>
+</html>
